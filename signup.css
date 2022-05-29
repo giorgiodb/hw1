@@ -1,0 +1,192 @@
+body{
+    background-color: azure;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-tot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+}
+
+/*---SFONFO---*/
+.flex-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 500px;
+    background-image: url(immagini/sfondo.png);
+    background-size: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.title{
+    font-size: 50px;
+    font-family: 'Dela Gothic One';
+    color: white;
+    z-index: 1;
+}
+
+/*---FORM---*/
+
+.flex-form{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(222, 222, 222);
+    padding: 10px 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+p {
+    margin: 0.3em;
+    font-family: 'Abel';
+    color: gray;
+    text-align: right;
+}
+
+label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+input {
+    margin-left: 0.6em;
+    width: 200px;
+}
+
+.det{
+    border: 1px solid grey;
+    background-color: azure;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.error{
+    font-size: 10px;
+    color: rgb(222, 222, 222);
+    text-align: right;
+    margin: 0px;
+    margin-right: 4.8;
+}
+
+/*---GRIGLIA---*/
+.choice-grid{
+    background-color: rgb(222, 222, 222);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.choice-grid div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 60px;
+    width: calc(20.5% - 5px);
+    background-color: #f4f4f4;
+    border: 3px solid #dcdcdc;
+    padding: 5px;
+}
+
+.choice-grid div img{
+    border-radius: 50px;
+}
+
+.unselected{
+    opacity: 0.6;
+}
+
+div.selected{
+    background-color: rgb(200, 85, 85);
+}
+
+/*---BOTTONE---*/
+div{
+    text-align: center;
+}
+
+.details input{
+    border: 1px solid rgb(175, 169, 169);
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    background-color: rgb(175, 169, 169);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+input[type=submit]{
+    color: black;
+    font-family: 'Fjalla One';
+    padding: 3px;
+    font-size: 15px;
+    color: black;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(140, 136, 136);
+}
+
+/*---OTHER---*/
+.signup{
+    text-align: center;
+    font-size: 17px;
+    margin: 0.3em;
+    font-family: 'Abel';
+    color: gray;
+}
+
+.signup a{
+    text-decoration: none;
+    color: black;
+}
+
+.signup a:hover{
+    color: brown;
+}
+
+.hidden{
+    display: none;
+}
+
+span{
+    font-size: 10px;
+}
+
+.errori{
+    color: red;
+}
+
+.error_in{
+    border: 2px solid #fa1c2c;
+}
+
+.error_s{
+    color: #fa1c2c;
+}
+
+.true_in{
+    border: 2px solid rgb(6, 184, 6);
+}
+
+

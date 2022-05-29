@@ -1,0 +1,706 @@
+body{
+    margin: 0px;
+    background-color: azure;
+}
+
+.flex-all{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.hidden{
+    display: none;
+}
+
+/*-----MAIN PAGE-----*/
+.flex-left{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border-radius: 22px;
+    margin-top: 20px;
+    height: fit-content;
+    box-shadow: 0px 8px 12px grey;
+}
+
+.profile{
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 300px;
+    background-image: url(immagini/sfondo.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    .profile{
+        height: 190px;
+    }
+}
+
+@media (max-width: 550px) {
+    .profile{
+        height: 130px;
+    }
+}
+
+.profile .logaut{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(100, 98, 98);
+}
+
+.profile .logaut a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Fjalla One';
+    font-size: 20px;
+}
+
+.profile .logaut:hover{
+    background-color: grey;
+}
+
+@media (max-width: 900px){
+    .profile .logaut a{
+        font-size: 13px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 550px){
+    .profile .logaut a{
+        font-size: 10px;
+        padding: 0px;
+    }
+}
+
+.foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: white;
+    padding: 4px;
+}
+
+.foto img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+@media (max-width: 900px) {
+    .foto{
+        height: 100px;
+        width: 100px;
+        margin-top: -30px;
+    }
+    .foto img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .foto{
+        height: 60px;
+        width: 60px;
+        margin-top: -15px;
+    }
+    .foto img{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.nome{
+    position: absolute;
+    bottom: 35px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Fjalla One';
+}
+
+@media (max-width: 900px){
+    .nome{
+        font-size: 15px;
+        margin-bottom: -10px;
+    }
+}
+
+@media (max-width: 550px){
+    .nome{
+        font-size: 10px;
+        margin-bottom: -15px;
+    }
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.search p{
+    font-size: 20px;
+    font-family: 'Roboto';
+    padding: 5px 25px;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+}
+
+.search p:hover{
+    box-shadow: 0px 0px 10px rgb(155, 153, 153);
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -15px;
+    width: 60vw;
+}
+
+.line p{
+    font-size: 18px;
+    font-family: 'Fjalla One';
+}
+
+@media (max-width: 900px){
+    .search{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .search p{
+        font-size: 10px;
+        padding: 3px 15px;
+    }
+    .line p{
+        font-size: 10px;
+    }
+    .line .button{
+        padding: 5px;
+    }
+    .line .button a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 550px){
+    .search{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .search p{
+        font-size: 10px;
+        padding: 3px 15px;
+    }
+    .line p{
+        font-size: 8px;
+    }
+    .line .button{
+        padding: 1px;
+    }
+    .line .button a{
+        font-size: 8px;
+    }
+}
+
+.line .button{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+@media (max-width: 900px){
+    .line .button{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 550px){
+    .line .button{
+        padding: 5px;
+        border-radius: 9px;
+    }
+}
+
+.line .button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Fjalla One';
+}
+
+.line .button:hover{
+    background-color: rgb(55, 132, 134);
+}
+
+/*VIEW*/
+.new{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 57vw; 
+    background-color: rgb(185, 199, 199);
+    border-radius: 20px;
+}
+
+.new1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 57vw;
+    background-color: rgb(159, 91, 91);
+    border-radius: 20px;
+}
+
+.case{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 18px;
+}
+
+.img_track{
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+}
+
+.title_track{
+    margin: 3px 0px 0px 0px;
+    font-size: 12px;
+    font-family: 'Fjalla One';
+    color: grey;
+}
+
+.author_track{
+    margin: 0px 0px 5px 0px;
+    font-size: 10px;
+    font-family: 'Fjalla One';
+    color: black;
+}
+
+.img_delete{
+    height: 20px;
+    width: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+
+/*---COMMUNITY---*/
+.flex-right{
+    box-shadow: 0px 8px 12px grey;
+    background-color: white;
+    height: fit-content;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 35px;
+    font-family: 'Fjalla One';
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.post p{
+    color: white;
+    margin: 3px;
+    font-size: 20px;
+    font-family: 'Fjalla One';
+    padding: 3px;
+}
+
+.post a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .title{
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+    .post p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px){
+    .title{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .post p{
+        font-size: 8px;
+    }
+}
+
+.post a:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+/*POST*/
+#posts{
+    display: flex;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.bacheca{
+    display: flex;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 28vw;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 0px 4px grey;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px){
+    .bacheca{
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 550px){
+    .bacheca{
+        margin-top: 4px;
+        margin-top: 4px;
+    }
+}
+
+.u_section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.p_u_section{
+    font-size: 15px;
+    color: grey;
+    font-family: 'Fjalla One';
+}
+
+.img_u_section{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+@media (max-width: 900px){
+    .p_u_section{
+        font-size: 12px;
+    }
+    
+    .img_u_section{
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 550px){
+    .p_u_section{
+        font-size: 10px;
+    }
+    
+    .img_u_section{
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+    }
+}
+
+.m_section{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text{
+    font-size: 18px;
+    color: black;
+    font-family: 'Fjalla One';
+    margin: 0px;
+}
+
+.l_section{
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(69, 66, 66);
+    border-radius: 10px;
+    border: 0px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 900px){
+    .text{
+        font-size: 11px;
+    }
+    .m_section{
+        padding: 5px;
+    }
+    .l_section{
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 550px){
+    .text{
+        font-size: 8px;
+    }
+    .m_section{
+        padding: 3px;
+    }
+    .l_section{
+        margin-bottom: 0px;
+    }
+}
+
+.number{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.heart, .arrows{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .number{
+        font-size: 10px;
+    }
+    .heart,.arrows{
+        height: 20px;
+        width: 20px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 550px){
+    .number{
+        font-size: 10px;
+    }
+    .heart,.arrows{
+        height: 20px;
+        width: 20px;
+        border-radius: 2px;
+    }
+}
+
+.like:hover {
+    background-color: rgb(206, 33, 33);
+}
+
+.like_button_selected {
+    background-color: rgb(206, 33, 33);
+}
+
+.delete:hover{
+    background-color: black;
+}
+
+/*---MODALE---*/
+#modal-view{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-view.hidden{
+    display: none;
+}
+
+#modal-view.no_scroll{
+    overflow: hidden;
+}
+
+#modal-view .element{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 30vw;
+    background-color: white;
+    border-radius: 20px;
+}
+
+@media (max-width: 900px){
+    #modal-view .element{
+        height: 40vh;
+        width: 50vw;
+    }
+}
+
+@media (max-width: 550px){
+    #modal-view .element{
+        height: 40vh;
+        width: 60vw;
+    }
+}
+
+#modal-view #close_modal{
+    border: 1px solid black;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Fjalla One';
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#modal-view #close_modal:hover{
+    background-color: rgb(53, 50, 50);
+}
+
+#modal-view h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Fjalla One';
+    color: grey;
+    margin-top: 50px;
+}
+
+#modal-view form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-view form input[type="submit"]{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: 'Fjalla One';
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#modal-view form input[type="submit"]:hover{
+    background-color: rgb(53, 50, 50);
+}
+
+#modal-view form textarea[name="text"]{
+    border: 1px solid grey;
+    height: 20vh;
+    width: 20vw;
+    border-radius: 10px;
+    resize: none;
+}
+
+@media (max-width: 900px){
+    #modal-view form textarea[name="text"]{
+        height: 22vh;
+        width: 40vw;
+    }
+}
+
+@media (max-width: 550px){
+    #modal-view form textarea[name="text"]{
+        height: 25vh;
+        width: 50vw;
+    }
+}
+

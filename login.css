@@ -1,0 +1,207 @@
+body{
+    background-color: azure;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-tot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*---SFONDO---*/
+.flex-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 50vh;
+    width: 70vw;
+    background-image: url(immagini/sfondo.png);
+    background-size: cover;
+}
+
+.title{
+    font-size: 100px;
+    font-family: 'Dela Gothic One';
+    color: white;
+    z-index: 1;
+}
+
+@media (max-width: 1035px){
+    .title{
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 698px){
+    .title{
+        font-size: 75px;
+    }
+}
+
+.flex-img h2{
+    color: white;
+    font-family: 'Abel', 'Helvetica';
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.flex-img h3{
+    color: white;
+    font-family: 'Abel', 'Helvetica';
+    z-index: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+.flex-img h4{
+    color: white;
+    font-family: 'Abel', 'Helvetica';
+    z-index: 1;
+    margin-top: 0px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.flex{
+    display: flex;
+    height: 40vh;
+    width: 70vw;
+}
+
+/*---FORM---*/
+.flex-form{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+    border-bottom-left-radius: 30px;
+}
+
+p {
+    margin: 0.3em;
+    font-family: 'Abel';
+    color: gray;
+    height: 5vh;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+input {
+    margin-left: 0.6em;
+    width: 200px;
+}
+
+.det{
+    border: 1px solid grey;
+    background-color: azure;
+    height: 30px;
+    width: 15vw;
+    border-radius: 10px;
+}
+
+/*---BOTTONE---*/
+div{
+    text-align: right;
+}
+
+.details input{
+    border: 1px solid rgb(175, 169, 169);
+    text-align: center;
+    border-radius: 10px;
+    width: 15vw;
+    background-color: rgb(175, 169, 169);
+    margin-bottom: 10px;
+    margin-right: 4.8px;
+}
+
+input[type=submit]{
+    color: black;
+    font-family: 'Fjalla One';
+    padding: 3px;
+    font-size: 15px;
+    color: black;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(140, 136, 136);
+}
+
+/*---CONTATTI---*/
+.flex-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-right-radius: 30px;
+    width: 30vw;
+    height: 40vh;
+    background-color: black;
+}
+
+.tit{
+    color: white;
+    font-size: 30px;
+    font-family: 'Fjalla One';
+    margin-bottom: 20px;
+}
+
+.parag{
+    color: white;
+    width: 20vw;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.flex-contact i{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+/*---OTHER---*/
+.signup{
+    text-align: right;
+    font-size: 17px;
+    margin: 0.3em;
+    font-family: 'Abel';
+    color: gray;
+}
+
+.signup a{
+    text-decoration: none;
+    color: black;
+}
+
+.signup a:hover{
+    color: brown;
+}
+
+span{
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: 'Abel';
+}
+
+.error{
+    color: red;
+}
+
